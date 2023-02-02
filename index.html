@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | News homepage</title>
-
-
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="">
 </head>
 
 <body>
@@ -19,8 +23,6 @@
       </figure>
 
       <div class="navbar__menu">
-        <div class="navbar__menu--mobile"></div>
-
         <div class="navbar__menu--desktop inactive">
           <ul class="navbar__menu__ul">
             <li class="navbar__menu__li">
@@ -39,6 +41,14 @@
               <a href="#" class="navbar__menu__links">Categories</a>
             </li>
           </ul>
+        </div>
+
+        <div class="navbar__menu--mobile">
+          <div class="navbar__menu__hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </div>
       </div>
     </nav>
@@ -84,7 +94,7 @@
 
         <h3 class="down__article__numbers">01</h3>
         <a class="down__article__titles" href="#">Reviving Retro PCs</a>
-        <p class="down__articles__texts">What happens when old PCs are given modern upgrades?</p>
+        <p class="down__article__texts">What happens when old PCs are given modern upgrades?</p>
       </div>
 
       <div class="down__article">
@@ -94,7 +104,7 @@
 
         <h3 class="down__article__numbers">02</h3>
         <a class="down__article__titles" href="#">Top 10 Laptops of 2022</a>
-        <p class="down__articles__texts">Our best picks for various needs and budgets.</p>
+        <p class="down__article__texts">Our best picks for various needs and budgets.</p>
       </div>
 
       <div class="down__article">
@@ -104,11 +114,10 @@
 
         <h3 class="down__article__numbers">03</h3>
         <a class="down__article__titles" href="#">The Growth of Gaming</a>
-        <p class="down__articles__texts">How the pandemic has sparked fresh opportunities.</p>
+        <p class="down__article__texts">How the pandemic has sparked fresh opportunities.</p>
       </div>
     </section>
   </main>
-
 </body>
 
 </html>
