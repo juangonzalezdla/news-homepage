@@ -18,9 +18,9 @@
 <body>
   <header class="header">
     <nav class="navbar container">
-      <figure class="navbar__logo--container">
+      <a class="navbar__logo--container" href="./index.html">
         <img class="navbar__logo" src="./assets/images/logo.svg" alt="logo">
-      </figure>
+      </a>
 
       <div class="navbar__menu">
         <div class="navbar__menu--desktop inactive">
@@ -55,65 +55,70 @@
   </header>
 
   <main class="main__container container">
-    <article class="article__web3">
-      <img class="article__web3__img" src="./assets/images/image-web-3-mobile.jpg" alt="Image web3">
+    <section class="top">
+      <!--Principal top article-->
+      <article class="article__web3">
+        <img class="article__web3__img" src="./assets/images/image-web-3-mobile.jpg" alt="Image web3">
 
-      <h1 class="article__web3__title">The Bright Future of Web 3.0?</h1>
+        <h1 class="article__web3__title">The Bright Future of Web 3.0?</h1>
 
-      <p class="article__web3__text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of thepeople. But is it really fulfilling its promise?</p>
+        <p class="article__web3__text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of thepeople. But is it really fulfilling its promise?</p>
 
-      <a class="article__web3__cta" href="#">Read more</a>
-    </article>
+        <button class="article__web3__cta">Read more</button>
+      </article>
 
-    <aside class="aside">
-      <h2 class="aside__title">New</h2>
+      <!--Secundary top article-->
+      <aside class="aside">
+        <h2 class="aside__title">New</h2>
 
-      <div class="aside__article">
-        <a class="aside__article__titles" href="#">Hydrogen VS Electric Cars</a>
-        <p class="aside__article__texts">Will hydrogen-fueled cars ever catch up to EVs?</p>
-      </div>
-
-      <div class="aside__article">
-        <a class="aside__article__titles" href="#">The Downsides of AI Artistry</a>
-        <p class="aside__article__texts">What are the possible adverse effects of on-demand AI image generation?</p>
-      </div>
-
-      <div class="aside__article">
-        <a class="aside__article__titles" href="#">Is VC Funding Drying Up?</a>
-        <p class="aside__article__texts">Private funding by VC firms is down 50% YOY. We take a look at what that means.
-        </p>
-      </div>
-    </aside>
-
-    <section class="down">
-      <div class="down__article">
-        <figure class="down__article__img--container">
-          <img class="down__article__img" src="./assets/images/image-retro-pcs.jpg" alt="Retro pcs">
+        <div class="aside__article">
+          <a class="aside__article__titles" href="#">Hydrogen VS Electric Cars</a>
+          <p class="aside__article__texts">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr>
+        <div class="aside__article">
+          <a class="aside__article__titles" href="#">The Downsides of AI Artistry</a>
+          <p class="aside__article__texts">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <hr>
+        <div class="aside__article">
+          <a class="aside__article__titles" href="#">Is VC Funding Drying Up?</a>
+          <p class="aside__article__texts">Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </div>
+      </aside>
+    </section>
+    
+    <!--Bottom articles-->
+    <section class="bottom">
+      <div class="bottom__article">
+        <figure class="bottom__article__img--container">
+          <img class="bottom__article__img" src="./assets/images/image-retro-pcs.jpg" alt="Retro pcs">
         </figure>
 
-        <h3 class="down__article__numbers">01</h3>
-        <a class="down__article__titles" href="#">Reviving Retro PCs</a>
-        <p class="down__article__texts">What happens when old PCs are given modern upgrades?</p>
+        <h3 class="bottom__article__numbers">01</h3>
+        <a class="bottom__article__titles" href="#">Reviving Retro PCs</a>
+        <p class="bottom__article__texts">What happens when old PCs are given modern upgrades?</p>
       </div>
 
-      <div class="down__article">
-        <figure class="down__article__img--container">
-          <img class="down__article__img" src="./assets/images/image-top-laptops.jpg" alt="Retro pcs">
+      <div class="bottom__article">
+        <figure class="bottom__article__img--container">
+          <img class="bottom__article__img" src="./assets/images/image-top-laptops.jpg" alt="Retro pcs">
         </figure>
 
-        <h3 class="down__article__numbers">02</h3>
-        <a class="down__article__titles" href="#">Top 10 Laptops of 2022</a>
-        <p class="down__article__texts">Our best picks for various needs and budgets.</p>
+        <h3 class="bottom__article__numbers">02</h3>
+        <a class="bottom__article__titles" href="#">Top 10 Laptops of 2022</a>
+        <p class="bottom__article__texts">Our best picks for various needs and budgets.</p>
       </div>
 
-      <div class="down__article">
-        <figure class="down__article__img--container">
-          <img class="down__article__img" src="./assets/images/image-gaming-growth.jpg" alt="Retro pcs">
+      <div class="bottom__article">
+        <figure class="bottom__article__img--container">
+          <img class="bottom__article__img" src="./assets/images/image-gaming-growth.jpg" alt="Retro pcs">
         </figure>
 
-        <h3 class="down__article__numbers">03</h3>
-        <a class="down__article__titles" href="#">The Growth of Gaming</a>
-        <p class="down__article__texts">How the pandemic has sparked fresh opportunities.</p>
+        <h3 class="bottom__article__numbers">03</h3>
+        <a class="bottom__article__titles" href="#">The Growth of Gaming</a>
+        <p class="bottom__article__texts">How the pandemic has sparked fresh opportunities.</p>
       </div>
     </section>
   </main>

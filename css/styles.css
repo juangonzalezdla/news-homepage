@@ -19,10 +19,13 @@
 body {
   font-size: 15px;
   font-family: var(--font-family);
+  min-height: 100vh;
+  color: var(--Dark-grayish-blue);
+  background: var(--Off-white);
 }
 
 .container {
-  width: 90%;
+  padding: 0 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -31,11 +34,12 @@ body {
   display: none;
 }
 
+/* Header */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 2rem 1rem;
 }
 
 .navbar__logo--container {
@@ -56,13 +60,14 @@ body {
 .bar1, .bar2, .bar3 {
   width: 30px;
   height: 5px;
-  background-color: #333;
+  background-color: var(--Very-dark-blue);
   margin: 6px 0;
   transition: 0.4s;
 }
 
+/* Principal top article - Web3 */
 .article__web3 {
-  min-height: 700px;
+  margin-bottom: 4rem;
 }
 
 .article__web3__img {
@@ -78,7 +83,6 @@ body {
 }
 
 .article__web3__text {
-  color: var(--Dark-grayish-blue);
   font-size: 0.90rem;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -89,25 +93,56 @@ body {
   color: var(--Off-white);
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 4px;
-  padding: 15px 30px;
-  margin-bottom: 40px;
+  padding: 15px 35px;
+  border: none;
 }
 
 .article__web3__cta:hover {
   background-color: var(--Very-dark-blue);
+  cursor: pointer;
 }
 
-/*.aside {
+/* Secundary top article - Aside articles */
+.aside {
   background-color: var(--Very-dark-blue);
   padding: 20px;
+  margin-bottom: 4rem;
 }
 
 .aside__title {
-  
+  color: var(--Soft-orange);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
-.down__article {
+.aside__article__titles {
+  color: var(--Off-white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.aside__article__titles:hover {
+  color: var(--Soft-orange);
+}
+
+.aside__article__texts {
+  color: var(--Grayish-blue);
+  font-size: 0.90rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+hr {
+  color: var(--Grayish-blue);
+  margin: 25px 0;
+}
+
+/* Bottom articles */
+/*.down__article {
   display: flex;
   flex-direction: row;
 }
