@@ -142,11 +142,40 @@ hr {
 }
 
 /* Bottom articles */
-/*.down__article {
-  display: flex;
-  flex-direction: row;
+.bottom {
+  margin-bottom: 4rem;
 }
 
-.down__article__img {
-  width: 100%;
-}*/
+.bottom__article {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.bottom__article__img {
+  max-width: 100px;
+}
+
+.bottom__article__titles {
+  display: block;
+  color: var(--Very-dark-blue);
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.bottom__article__titles:hover {
+  color: var(--Soft-red);
+}
+
+.bottom__article__numbers {
+  color: var(--Grayish-blue);
+  font-size: 2rem;
+}
+
+.bottom__article__texts {
+  font-size: 0.90rem;
+  line-height: 1.5;
+}
