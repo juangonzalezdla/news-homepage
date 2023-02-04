@@ -12,7 +12,7 @@
 
   <title>Frontend Mentor | News homepage</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -23,7 +23,13 @@
       </a>
 
       <div class="navbar__menu">
-        <div class="navbar__menu--desktop inactive">
+        <div class="navbar__menu__hamburger" id="burger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        
+        <div class="navbar__menu--desktop">
           <ul class="navbar__menu__ul">
             <li class="navbar__menu__li">
               <a href="#" class="navbar__menu__links">Home</a>
@@ -42,29 +48,47 @@
             </li>
           </ul>
         </div>
-
-        <div class="navbar__menu--mobile">
-          <div class="navbar__menu__hamburger" id="burger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </div>
       </div>
     </nav>
   </header>
+
+  <div class="navbar__menu--mobile inactive">
+    <ul class="navbar__menu__ul">
+      <li class="navbar__menu__li">
+        <a href="#" class="navbar__menu__links">Home</a>
+      </li>
+      <li class="navbar__menu__li">
+        <a href="#" class="navbar__menu__links">New</a>
+      </li>
+      <li class="navbar__menu__li">
+        <a href="#" class="navbar__menu__links">Popular</a>
+      </li>
+      <li class="navbar__menu__li">
+        <a href="#" class="navbar__menu__links">Trending</a>
+      </li>
+      <li class="navbar__menu__li">
+        <a href="#" class="navbar__menu__links">Categories</a>
+      </li>
+    </ul>
+  </div>
 
   <main class="main__container container">
     <section class="top">
       <!--Principal top article-->
       <article class="article__web3">
         <img class="article__web3__img" src="./assets/images/image-web-3-mobile.jpg" alt="Image web3">
+        <img class="article__web3__img--desktop" src="./assets/images/image-web-3-desktop.jpg" alt="Image web3">
 
-        <h1 class="article__web3__title">The Bright Future of Web 3.0?</h1>
+        <div class="article__web3__texts--container">
+          <div class="article__web3__title--container">
+            <h1 class="article__web3__title">The Bright Future of Web 3.0?</h1>
+          </div>
 
-        <p class="article__web3__text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of thepeople. But is it really fulfilling its promise?</p>
-
-        <button class="article__web3__cta">Read more</button>
+          <div class="article__web3__text--btn">
+            <p class="article__web3__text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of thepeople. But is it really fulfilling its promise?</p>
+            <button class="article__web3__cta">Read more</button>
+          </div>
+        </div> 
       </article>
 
       <!--Secundary top article-->
