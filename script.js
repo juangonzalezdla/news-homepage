@@ -1,6 +1,5 @@
-/* Animated icon */
-const animatedIcon = document.getElementById('burger');
+const burgerMenu = document.getElementById('burger');
 
-animatedIcon.addEventListener('click', () => {
-  animatedIcon.classList.toggle('change');
+burgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.toggle('change');
 });

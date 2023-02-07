@@ -52,7 +52,7 @@ body {
   display: block;
 }
 
-.navbar__menu__hamburger {
+.navbar__hamburger {
   display: inline-block;
   cursor: pointer;
 }
@@ -80,7 +80,10 @@ body {
   transform: translate(0, -11px) rotate(45deg);
 }
 
-/* desktop manu */
+/* Mobile menu */
+
+
+/* desktop menu */
 .navbar__menu--desktop {
   display: none;
 }
