@@ -14,6 +14,14 @@
   .navbar__menu--desktop {
     display: block;
   }
+
+  .navbar__menu--mobile {
+    display: none;
+  }
+
+  .opacity {
+    display: none;
+  }
 }
 
 @media (min-width: 850px) {
